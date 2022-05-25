@@ -22,6 +22,11 @@ public class AuthServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String action = request.getParameter("action");
+		if (action == null) {
+
+			response.sendRedirect(request.getServletContext().getContextPath() + "/TestServlet");
+			return;
+		}
 
 		if (!"login".equals(action) && !"logout".equals(action)) {
 			throw new ServletException("action must be login or logout");
