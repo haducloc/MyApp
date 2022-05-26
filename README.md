@@ -10,7 +10,7 @@ Test Jakarta EE Security - Wildfly
 ## Steps to produce the logout issue:
 
 ### Step1: http://localhost:8080/MyApp/TestServlet
-- You will see User is Null
+- You will see User is Null (Good)
 ### Step2: Click on the login link in the TestServlet page
 - The app will process a login, then redirect to the TestServlet again
 - You will see User is User1 & the created session id ( Good )
