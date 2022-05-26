@@ -16,4 +16,4 @@ Test Jakarta EE Security - Wildfly
 - You will see User is User1 & the created session id ( Good )
 ### Step3: Click on the logout link in the TestServlet page
 - The app will process a request.logout(), then redirect to the TestServlet again
-- You will see User is User1 & the same session id (WRONG) -> The user must be NULL because the request.logout().
+- You will see User is User1 & the same session id (WRONG) -> The user must be NULL because the request.logout(). JSESSIONID was supposed to be deleted too but not.
